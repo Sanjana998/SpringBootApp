@@ -9,6 +9,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
+		// GetBeans is used to get the object of DEV class from JVM Container
 		Dev obj1 = context.getBean(Dev.class);
 		obj1.build();
 	}
